@@ -41,7 +41,7 @@ def create():
     if request.method == 'POST':
         jumin=request.form.get('jumin')
 
-        if not jumin.isnumeric():
+        if jumin.isalpha():
             return "문자가 포함되어 있어 검증이 불가합니다.14자리 숫자로 입력해주세요(예시: 010101-2020202)"
 
         # if jumin.isalpha():

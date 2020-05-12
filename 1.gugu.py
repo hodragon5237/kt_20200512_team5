@@ -15,8 +15,7 @@ def gugu(number):
     elif int(number) not in range(2,10):
         return "wrong number"
     for i in range(1,10):
-        result=int(number)*i
-        result_list.append(number+"X"+str(i)+"="+str(result))
+        result_list.append(number+"X"+str(i)+"="+str(int(number)*i))
     
     return '<br>'.join(result_list)
 
